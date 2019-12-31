@@ -1,0 +1,120 @@
+body {
+    /* background: #243654; */
+    background: #1f2b6c;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+.mainControls {
+    background: #a3ccf4;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 500px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#chooseDate {
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mainContainer {
+    margin: 0 auto;
+    border-radius: 4px;
+    min-width: 250px;
+    height: 84vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.day__Container {
+    border-radius: 4px;
+    padding: 3px;
+    width: 200px;
+    min-height: 180px;
+    margin: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.day__dateBar {
+    /* margin: 10px auto; */
+    color: rgb(219, 224, 226);
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskType__Container {
+    border-radius: 4px;
+    margin: 2px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start
+}
+
+.taskType__TitleBar {
+    border-radius: 4px;
+    padding: 2px;
+    width: 100%;
+    height: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.taskType__TitleBar--cat1Color {
+    background: #EC804E;
+    /* background: #f4dc8c; */
+}
+
+.taskType__TitleBar--cat2Color {
+    /* background: #1292c4; */
+    /* background: #6389df; */
+    background: #f4dc8c;
+    /* background: #ed9b55; */
+}
+
+.taskItem {
+    /* background: #A7C7D4; */
+    background: #a3ccf4;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 5px;
+    width: 100%;
+    min-height: 20px;
+    transition: transform 300ms ease;
+    word-wrap: break-word;
+}
+
+.taskItem:hover {
+    transform: scale(1.03);
+}
+
+.taskControlBtns {
+    height: 25px;
+    display: flex;
+}
+
+.prioTask {
+    background: #FF5B5B;
+}
+
+.taskInProgress {
+    background: #fcc100;
+}

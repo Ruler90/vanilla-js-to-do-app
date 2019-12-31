@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/spanEdit.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <div class="mainControls">
+            <input type="date" id="chooseDate">
+            <input type="button" class="mainButton addDayBtn" value="Add day">
+            <input type="button" class="mainButton saveToFileBtn" value="Save to file">
+            <input type="file" name="getFile" id="fileInput"
+                accept="text/plain">
+            <button tabIndex="-1" class="mainButton loadFromFileBtn"><label for="fileInput">Load from
+                    file</label></button>
+        </div>
+
+        <div class="mainContainer"></div>
+
+    </main>
+
+    <!-- <script src="/src/index.js" type="module"></script>
+    <script src="/src/modules/tasks.js" type="module"></script>
+    <script src="/src/modules/spanEdit.js" type="module"></script>
+    <script src="/src/modules/dragAndDrop.js" type="module"></script>
+    <script src="/src/modules/dragScroll.js" type="module"></script>
+    <script src="/src/modules/saveToFile.js" type="module"></script> -->
+
+    <!-- minified and uglified prod webpack bundle -->
+    <script src="../dist/prodBundle.js"></script>
+
+</body>
+
+</html>

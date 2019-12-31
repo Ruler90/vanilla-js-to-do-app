@@ -1,0 +1,148 @@
+.mainButton {
+    width: 100px;
+    height: 34px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    margin: 2px;
+    transition: transform 300ms ease, background 300ms ease;
+}
+
+.mainButton:active {
+    transform: scale(0.9);
+}
+
+.addDayBtn {
+    background: #EC804E;
+}
+
+.addDayBtn:hover {
+    background: rgb(194, 107, 66);
+}
+
+.saveToFileBtn {
+    background: #1FCBA8;
+}
+
+.saveToFileBtn:hover {
+    background: rgb(28, 172, 143);
+}
+
+input[type=file] {
+    opacity: 0;
+    position: absolute;
+    right: -2px;
+    width: 0.1px;
+    height: 0.1px;
+}
+
+input[type=file]:focus+button {
+    outline: auto 5px -webkit-focus-ring-color;
+}
+
+/* Styles only for Firefox - start */
+@-moz-document url-prefix() {
+    ::-moz-focus-inner {
+        border: none;
+    }
+
+    input[type=file]:focus+button,
+    input:focus {
+        outline: solid 2px #4D90FE;
+        -moz-outline-radius: 4px;
+    }
+}
+
+/* Styles only for Firefox - end */
+
+.loadFromFileBtn {
+    background: #F6C24A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1px;
+    box-sizing: border-box;
+}
+
+.loadFromFileBtn:hover {
+    background: rgb(202, 161, 63);
+}
+
+.defaultButton {
+    height: 20px;
+    width: 25px;
+    padding: 1px;
+    border: none;
+    border-radius: 2px;
+    transition: transform 300ms ease, background 300ms ease;
+}
+
+.defaultButton:active {
+    transform: scale(0.9);
+}
+
+.removeDayButton {
+    background: #fc0000;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    right: 8px;
+    /* bad for mobile - with no hover effect user may accidentally delete day */
+    display: none;
+}
+
+.day__Container:hover .removeDayButton {
+    display: initial;
+}
+
+.addTaskButton {
+    background: #00f329;
+    font-weight: 700;
+    position: absolute;
+    right: 5px;
+}
+
+.addTaskButton:hover {
+    background: #13b92f;
+}
+
+.prioBtn {
+    background: #FF5B5B;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.prioBtn:hover {
+    background: #bb2c22;
+}
+
+.taskInProgressBtn {
+    background: #fcc100;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.taskInProgressBtn:hover {
+    background: #cc9f0c;
+}
+
+.removeTaskBtn {
+    background: #fc0000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    /* margin-left: auto to align it to the right in case I add more buttons */
+    margin: 5px 5px 5px auto;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.removeTaskBtn:hover,
+.removeDayButton:hover {
+    background: #d10707;
+}

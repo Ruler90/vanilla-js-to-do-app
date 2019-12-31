@@ -1,0 +1,81 @@
+@media screen and (min-width: 310px) {
+    .day__Container {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .day__Container {
+        width: 100%;
+    }
+
+    .mainControls {
+        max-width: 200px;
+    }
+
+    .mainButton {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .mainContainer {
+        flex-wrap: wrap;
+    }
+
+    .day__Container {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        margin-bottom: 0;
+    }
+    
+    main {
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 98.5vh;
+    }
+
+    .mainContainer {
+        flex-wrap: nowrap;
+    }
+
+    .day__Container {
+        width: 350px;
+        flex: 0 0 auto;
+    }
+
+    .mainTaskTypes__Container {
+        overflow: auto;
+        max-height: 76vh;
+        scrollbar-color: #ed9b55 #a3ccf4;
+        scrollbar-width: thin;
+    }
+
+    main {
+        scrollbar-color: #ed9b55 #a3ccf4;
+        scrollbar-width: thin;
+    }
+
+    .mainTaskTypes__Container::-webkit-scrollbar-track,
+    main::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background-color: #a3ccf4;
+    }
+
+    .mainTaskTypes__Container::-webkit-scrollbar,
+    main::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+    }
+
+    .mainTaskTypes__Container::-webkit-scrollbar-thumb,
+    main::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #ed9b55;
+    }
+}

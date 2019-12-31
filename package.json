@@ -1,0 +1,21 @@
+{
+  "name": "to-do-app-1-js",
+  "version": "1.2.5",
+  "description": "1. Choose day and add new list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development ./src/index.js --output ./dist/devBundle.js --watch",
+    "build": "webpack --mode production ./src/index.js --output ./dist/prodBundle.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruler90/to-do-app-1-js.git"
+  },
+  "author": "Ruler90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruler90/to-do-app-1-js/issues"
+  },
+  "homepage": "https://github.com/Ruler90/to-do-app-1-js#readme"
+}

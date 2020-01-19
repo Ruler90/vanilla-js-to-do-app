@@ -1,7 +1,7 @@
 
 = = = = = = = = = = =
 
-v1.2.5 - 30.12.2019
+### v1.2.5 - 30.12.2019
 
 - Zmiana Media Query, żeby widok poziomy włączał się już dla ekranów z min-width 960px - będzie obejmował ekrany 10 cali.
 
@@ -11,13 +11,13 @@ v1.2.5 - 30.12.2019
 
 = = = = = = = = = = =
 
-v1.2.4 - 14.11.2019
+### v1.2.4 - 14.11.2019
 
 - Poprawa fn spanEdit - wcześniej zawierała w sobie główną fn nadającą eventListenery (w zapisie IIFE) oraz pozostałe: rozpoczęcie edycji, zakończenie edycji blurem i zakończenie edycji Enterem. Całość była eksportowana do innych plików i tam wywoływana. Zapis IIFE był potrzebny, żeby przy odpaleniu zbiorczej fn wywołać samo nadanie eventListenerów. Podzielono to z powrotem na pojedyncze funkcje, główną nazwano spanEditListeners i wyeksportowano do pozostałych plików.
 
 = = = = = = = = = = =
 
-v1.2.3 - 13.10.2019
+### v1.2.3 - 13.10.2019
 
 - Dalsza rozbudowa funkcji dragAndDrop() - teraz można też przenosić całe dni. Żeby działanie nie nakładało się na siebie (żeby działało zarówno przenoszenie dni, jak i pojedynczych zadań, żeby nie nakładały się style przy dragover i dragleave i żeby elementy można było przenosić wyłącznie w miejsca, gdzie powinny się znaleźć):
     - zmieniono atrybut data-move na data-task dla taskItems
@@ -33,7 +33,7 @@ v1.2.3 - 13.10.2019
 
 = = = = = = = = = = =
 
-v1.2.2 - 12.10.2019
+### v1.2.2 - 12.10.2019
 
 - Rozbudowano funkcję dragAndDrop() - teraz można ustawiać elementy na liście w dowolnej kolejności. Po złapaniu zadania i przeciągnięciu go na inne zadanie, jest ono dodawane na jego miejscu, i cała lista przesuwa się w dół. Jednocześnie zachowano możliwość dodawania zadań do pustych list - dodane if statement przy drop dla taskTypeContainer, które pozwala na append tylko jeśli kategoria zadań jest pusta, w innym przypadku stosowane jest insertBefore stosowane przy taskItems. Bez if statement zadania zawsze były dodawane na końcu listy. Zmieniono też dodawanie atrybutu style z eventu dragenter na dragover -> dla taskTypeContainer działało ok, ale przy itemach style działały tylko przy dragenter, a przy każdym poruszeniu myszą (nawet na tym samym elemencie) znikały lub migały. Dragover odpala się częściej, ale daje wrażenie, jakby element cały czas miał zmieniony styl aż do drop lub dragleave. Throttle z lodash nie działało.
 
@@ -41,7 +41,7 @@ v1.2.2 - 12.10.2019
 
 = = = = = = = = = = =
 
-v1.2.1 - 06.10.2019, 07.10.2019, 08.10.2019, 09.10.2019
+### v1.2.1 - 06.10.2019, 07.10.2019, 08.10.2019, 09.10.2019
 
 - Wydzielono funkcję spanEdit() jako ES6 Module.
 
@@ -73,7 +73,7 @@ v1.2.1 - 06.10.2019, 07.10.2019, 08.10.2019, 09.10.2019
 
 = = = = = = = = = = =
 
-v1.1.0 - 05.10.2019, 06.10.2019
+### v1.1.0 - 05.10.2019, 06.10.2019
 
 - Dodano span oraz input z odpowiednimi klasami do .day__dateBar, aby można było edytować belkę z nazwą dnia tak jak edytuje się treść zadania.
 
@@ -90,7 +90,7 @@ v1.1.0 - 05.10.2019, 06.10.2019
 
 = = = = = = = = = = =
 
-v1.0.8 - 03.10.2019, 04.10.2019
+### v1.0.8 - 03.10.2019, 04.10.2019
 
 - Dodano funckję dragScroll, dzięki której można przewijać ekran trzymając wciśnięty LPM (na podstawie https://codepen.io/toddwebdev/pen/yExKoj).
     - Zmienną isDown odpowiedzialną za uruchomienie funkcji wyciągnięto poza funkcję i dodano także do drag&drop jako false, ponieważ przy przeciąganiu elementu między listami ekran zaczynał skakać. Teraz drag&drop oraz dragScroll działają prawidłowo, czyli uruchamia się tylko jedna funkcja w zależności od tego, gdzie kliknięto i przytrzymano LPM.
@@ -100,7 +100,7 @@ v1.0.8 - 03.10.2019, 04.10.2019
 
 = = = = = = = = = = =
 
-v1.0.6 - 02.10.2019
+### v1.0.6 - 02.10.2019
 
 - Przy dodawaniu zadania od razu pojawia się input z focusem i możliwością wpisania do niego tekstu.
 
@@ -108,7 +108,7 @@ v1.0.6 - 02.10.2019
 
 = = = = = = = = = = =
 
-v1.0.5 - 01.10.2019
+### v1.0.5 - 01.10.2019
 
 - Zmiana wyglądu całości na horizontal scroll. Wyszło podobnie do Trello. Jeśli konkretny dzień ma więcej zadań niż jest pionowego miejsca na stronie, to pojawia się pionowy scroll przy konkretnym dniu. Jeśli jest więcej dni niż poziomego miejsca na stronie, wtedy pojawia się poziomy scroll dla całości. Main Controls zostają na miejscu. Są też odpowiednie MQ, żeby był odpowiedni layout na mniejszych ekranach.
 
@@ -118,7 +118,7 @@ v1.0.5 - 01.10.2019
 
 = = = = = = = = = = =
 
-v1.0.2 - 26.09.2019
+### v1.0.2 - 26.09.2019
 
 - Wydzielono Media Queries do oddzielnego pliku css.
 
@@ -126,7 +126,7 @@ v1.0.2 - 26.09.2019
 
 = = = = = = = = = = =
 
-v1.0.1 - 25.09.2019
+### v1.0.1 - 25.09.2019
 
 - Zmieniono kolorystykę.
 
@@ -134,7 +134,7 @@ v1.0.1 - 25.09.2019
 
 = = = = = = = = = = =
 
-v1.0.0 - 20.09.2019
+### v1.0.0 - 20.09.2019
 
 - Zmieniono układ całości usuwając kategorie zadań: prio i mniej ważne. Zostały tylko zadania i strona z układem dostosowującym się do ekranu - na największym jest 1 dzień w rzędzie + 1 kolumna na zadania i 1 kolumna na stronę, a w każdej z nich zadania układają się po dwa w rzędzie.
 
@@ -148,7 +148,7 @@ v1.0.0 - 20.09.2019
 
 = = = = = = = = = = =
 
-v0.9.6 - 18.09.2019, 19.09.2019
+### v0.9.6 - 18.09.2019, 19.09.2019
 
 - Poprawiono i skrócono funkcję Drag&Drop:
     - Nie opiera się ona już na display:none elementów usuwanych oraz podpinaniu ich pod zmienną.
@@ -164,7 +164,7 @@ v0.9.6 - 18.09.2019, 19.09.2019
 
 = = = = = = = = = = =
 
-v0.9.5 - 16.09.2019
+### v0.9.5 - 16.09.2019
 
 - Dodano funkcję do obsługi eventów Drag&Drop.
     - W pierwszej wersji opierającej się na pętlach for po podpięciu funkcji zaczęły generować się null i undefined przy przenoszeniu elementów. Wystarczyło przenieść poza funkcję główną zmienną, która miała przechowywać przenoszony element.
@@ -176,7 +176,7 @@ v0.9.5 - 16.09.2019
 
 = = = = = = = = = = =
 
-v0.9.0 - 12.09.2019, 14.09.2019, 15.09.2019
+### v0.9.0 - 12.09.2019, 14.09.2019, 15.09.2019
 
 - Dodano funkcje do zapisywania tagu body do pliku .txt i wczytywania go na stronę: tasksBackup() oraz tasksFromFile(input).
     - Pierwsza opiera się na zapisaniu tych samych danych, które zapisują się w LS jako Blob (Binary Large Object). Następnie jest tworzony link do Bloba, który jest podstawiany pod nowy link z atrybutem download. Zostaje zasymulowane kliknięcie, plik można pobrać, a następnie link zostaje usunięty, żeby nie zalegał w pamięci.
@@ -192,7 +192,7 @@ v0.9.0 - 12.09.2019, 14.09.2019, 15.09.2019
 
 = = = = = = = = = = =
 
-v0.8.6 - 11.09.2019
+### v0.8.6 - 11.09.2019
 
 - Dodano auto-save przy każdej akcji (dodawanie/usuwanie dni, zadań, aktualizacja zadań, zmiana In Progress).
 
@@ -205,7 +205,7 @@ v0.8.6 - 11.09.2019
 
 = = = = = = = = = = =
 
-v0.8.5 - 10.09.2019
+### v0.8.5 - 10.09.2019
 
 - Zmiana układu zadań - dodanie kilku Media Queries, żeby przetestować wygląd na różnych szerokościach ekranu. Dla dużych ekranów wersja, gdzie kategorie zadań nie są jedna pod drugą, ale obok siebie. Przy dwóch kolumnach (2 dni obok siebie) wygląda to nieźle, ale jest mała szerokość pola na treść zadania, więc zadania z dużą ilością tekstu mogą być długie. Z kolei widok z jednym dniem na całej szerokości strony też wydaje się niezły, ale jeśli zadania będą tylko w jednej kategorii, to może to ostatecznie średnio wyglądać.
 
@@ -213,7 +213,7 @@ v0.8.5 - 10.09.2019
 
 = = = = = = = = = = =
 
-v0.8.0 - 09.09.2019
+### v0.8.0 - 09.09.2019
 
 - Dodane buttony, żeby zapisywać cały kod HTML sekcji body do Local Storage i potem wczytywać go, żeby odzyskać wszystkie elementy, jakie były przy zapisie:
     - Najpierw nie działał button dodawania dnia po załadowaniu danych z Local Storage - żeby to naprawić, przeniesiono ogólną zmienną łapiącą mainContainer do funkcji dodającej dni.
@@ -231,7 +231,7 @@ v0.8.0 - 09.09.2019
 
 = = = = = = = = = = =
 
-v0.6.0 - 08.09.2019
+### v0.6.0 - 08.09.2019
 
 - Dodane buttony i funkcje do nich:
     - dodawanie zadań w poszczególnych kategoriach zadań w wybranym dniu;
@@ -251,7 +251,7 @@ v0.6.0 - 08.09.2019
 
 = = = = = = = = = = =
 
-v0.2.0 - 07.09.2019:
+### v0.2.0 - 07.09.2019:
 
 - Stworzony prototyp wyglądu listy zadań - mały ekran jedna kolumna i w miarę rozszerzania ekranu kolejne dni pojawiają się obok siebie.
 

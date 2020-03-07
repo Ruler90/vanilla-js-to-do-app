@@ -1,4 +1,22 @@
-# To Do App 1 - JS
+
+
+# Vanilla JS To Do App
+
+Check [new improved version](https://github.com/Ruler90/react-to-do-app) of this To Do App created with React and React Hooks.
+
+## Quick start:
+
+1. Clone this repo and make it your local repo.
+
+2. Use ```npm install``` to install all dependencies listed in package.json (just Webpack).
+
+3. To start this App, open index.html - it has ```<script>``` tags with bundled code so you can run this App offline.
+
+4. You can also comment or delete ```<script>``` tags with bundled code, uncomment all JS modules and use local server (e.g. VS Code Live Server) to run this App. 
+
+5. To bundle, minify and uglify all js and css code with Webpack default settings, use ```npm run build```.
+
+## Features
 
 1. Choose day and add new list.
 

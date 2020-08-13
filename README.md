@@ -8,7 +8,7 @@ Check [new improved version](https://github.com/Ruler90/react-to-do-app) of this
 
 1. Clone this repo and make it your local repo.
 
-2. Use ```npm install``` to install all dependencies listed in package.json (just Webpack).
+2. Use ```npm install --save-dev webpack webpack-cli``` so you can bundle the code after making some changes.
 
 3. To start this App, open index.html - it has ```<script>``` tags with bundled code so you can run this App offline.
 

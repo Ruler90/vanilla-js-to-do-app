@@ -17,8 +17,5 @@
     "url": "https://github.com/Ruler90/vanilla-js-to-do-app/issues"
   },
   "homepage": "https://github.com/Ruler90/vanilla-js-to-do-app#readme",
-  "devDependencies": {
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
-  }
+  "devDependencies": {}
 }
